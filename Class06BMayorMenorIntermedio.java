@@ -52,5 +52,6 @@ public class Class06BMayorMenorIntermedio {
         System.out.println("El número mayor es " + mayor);
         System.out.println("El número menor es " + menor);
         System.out.println("El número intermedio es " + intermedio);
+        teclado.close();
     }
 } 

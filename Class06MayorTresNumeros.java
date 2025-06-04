@@ -26,5 +26,6 @@ public class Class06MayorTresNumeros {
             mayor= num3;
         }
         System.out.println("El número mayir es " + mayor);
+        teclado.close();
     }
 }

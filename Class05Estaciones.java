@@ -22,5 +22,6 @@ public class Class05Estaciones {
         }else{
             System.out.println("Numero incorrecto");
         }
+        teclado.close();
     }
 }
