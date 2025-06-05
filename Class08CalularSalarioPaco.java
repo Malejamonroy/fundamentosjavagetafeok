@@ -70,6 +70,6 @@ public class Class08CalularSalarioPaco {
         System.out.println("Iva (16%): " + iva);
         System.out.println("-------------------------");
         System.out.println("Salario final: " + (salario - iva));
-        
+        teclado.close();
     }
 }
