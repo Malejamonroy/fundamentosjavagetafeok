@@ -38,6 +38,11 @@ public class Class12String {
         //si deseamos modificar el objeto texto,debemos igualarlo
         texto = texto.toUpperCase();// asi se iguala
         System.out.println(texto);
+        //como recorrer letra a latra un string (caracter a caracter)
+        for(int i=0; i< texto.length();i++){
+            char letra=texto.charAt(i);
+            System.out.println("letra("+i+"): "+ letra);
+        }
 
     }
 }
