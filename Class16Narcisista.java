@@ -12,8 +12,8 @@ import java.util.Scanner;
 public class Class16Narcisista {
     public static void main(String[] args) {
         Scanner teclado= new Scanner(System.in);
-        System.out.println("Introduzca Número");
-        String textoNumero = teclado.nextLine();
+        System.out.println("Introduzca Número");//pedimos un numero
+        String textoNumero = teclado.nextLine();//captiramos como string
         int suma=0;
         //convertir el int a String
        for(int i = 0; i < textoNumero.length();i++){ //con esto sabemos la longitud del texto, el numero de caracteres
@@ -27,7 +27,7 @@ public class Class16Narcisista {
             System.out.println("El numero es Narcisista");
         }else{
             System.out.println("El numero no es narcisista");
-        }
+        }teclado.close();
     }
 
 }
