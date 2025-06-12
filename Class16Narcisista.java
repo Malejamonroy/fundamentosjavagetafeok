@@ -27,7 +27,8 @@ public class Class16Narcisista {
             System.out.println("El numero es Narcisista");
         }else{
             System.out.println("El numero no es narcisista");
-        }teclado.close();
+        }
+        teclado.close();
     }
 
 }

@@ -9,26 +9,29 @@ public class Class26MetodoEmail {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduzca su email: ");
-        String dato = teclado.nextLine();
-        String valEmail = metodoEmail()
+        String email = teclado.nextLine();
+        
+        String valEmail = metodoEmail(email);
+        System.out.println(valEmail);
+        teclado.close();
         
     }
     public static  String metodoEmail(String email){
-        String email = "";
+        String respuesta = "";
         if(email.contains("@") == false){
-            System.out.println("EL EMAIL NO EXISTE");
+           respuesta = "EL EMAIL NO EXISTE";
         }else if(email.startsWith("@" ) || email.endsWith("@") ){//que el @ no este ni al inicio ni al final
-            System.out.println("ERROR, intentelo de nuevo");
+            respuesta = "ERROR, intentelo de nuevo";
         }else if(email.indexOf("@") != email.lastIndexOf("@")){//que solamente tenga un @
-            System.out.println("Erro Fatal, email incorrecto");
+            respuesta = "Erro Fatal, email incorrecto";
         }else if(email.contains(".") == false){//Exista un punto
-            System.out.println("Falta el punto");
+            respuesta = "Falta el punto";
         }else if(email.indexOf("@") > email.indexOf(".")){//Exista un punto despues del @
-            System.out.println("mal");
+            respuesta = "mal no existe el punto despues del @";
         }else if(email.lastIndexOf(".") != email.length()-3 && email.lastIndexOf(".") != email.length()-4 ){//Dominio de 2 a 3 caracteres
-            System.out.println("Dominio incorrecto");
+            respuesta = "Dominio incorrecto";
         }else{
-            System.out.println("EL "+ " "+ email+" " + "ES CORRECTO");
-        }
+            respuesta = "EL "+ " "+ email+" " + "ES CORRECTO";
+        }return respuesta;
     }
 }
